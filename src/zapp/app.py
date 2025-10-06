@@ -4,7 +4,7 @@ from toga.style.pack import COLUMN, ROW, CENTER
 
 class ZApp(toga.App):
     def startup(self):
-        dirname = toga.App.app_dir
+        dirname = self.app_dir
         label = self.toga.Label(
             dirname,
             style = Pack(
